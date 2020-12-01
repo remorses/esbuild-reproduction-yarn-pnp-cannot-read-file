@@ -19,14 +19,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "reproduction-esbuild-require-in-esm-with-externals",
+        "name": "root-workspace-0b6124",
         "reference": "workspace:."
+      },
+      {
+        "name": "example",
+        "reference": "workspace:example"
+      },
+      {
+        "name": "pnp-plugin",
+        "reference": "workspace:pnp-plugin"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["reproduction-esbuild-require-in-esm-with-externals", ["workspace:."]]
+      ["example", ["workspace:example"]],
+      ["pnp-plugin", ["workspace:pnp-plugin"]],
+      ["root-workspace-0b6124", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -37,17 +47,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@types/resolve", "npm:1.17.1"],
-            ["@yarnpkg/pnpify", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:2.4.0"],
-            ["builtin-modules", "npm:3.1.0"],
-            ["esbuild", "npm:0.8.17"],
-            ["lodash", "npm:4.17.20"],
-            ["react", "npm:17.0.1"],
-            ["react-dom", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:17.0.1"],
-            ["react-storage-hooks", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:4.0.1"],
-            ["resolve", "patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"],
-            ["sucrase", "npm:3.16.0"],
-            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=cc6730"]
           ],
           "linkType": "SOFT",
         }]
@@ -311,10 +310,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:2.4.0", {
-          "packageLocation": "./.yarn/$$virtual/@yarnpkg-pnpify-virtual-74b000a9de/0/cache/@yarnpkg-pnpify-npm-2.4.0-f9312c18ed-89bbbe7f62.zip/node_modules/@yarnpkg/pnpify/",
+        ["virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:2.4.0", {
+          "packageLocation": "./.yarn/$$virtual/@yarnpkg-pnpify-virtual-9c91055f7b/0/cache/@yarnpkg-pnpify-npm-2.4.0-f9312c18ed-89bbbe7f62.zip/node_modules/@yarnpkg/pnpify/",
           "packageDependencies": [
-            ["@yarnpkg/pnpify", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:2.4.0"],
+            ["@yarnpkg/pnpify", "virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:2.4.0"],
             ["@types/eslint", null],
             ["@types/typescript", null],
             ["@yarnpkg/core", "npm:2.4.0"],
@@ -718,6 +717,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esprima", "npm:4.0.1"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["example", [
+        ["npm:0.0.0", {
+          "packageLocation": "./.yarn/cache/example-npm-0.0.0-fbd1a5d224-88e1e28403.zip/node_modules/example/",
+          "packageDependencies": [
+            ["example", "npm:0.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["workspace:example", {
+          "packageLocation": "./example/",
+          "packageDependencies": [
+            ["example", "workspace:example"],
+            ["react", "npm:17.0.1"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["fast-glob", [
@@ -1370,6 +1386,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["pnp-plugin", [
+        ["workspace:pnp-plugin", {
+          "packageLocation": "./pnp-plugin/",
+          "packageDependencies": [
+            ["pnp-plugin", "workspace:pnp-plugin"],
+            ["@types/resolve", "npm:1.17.1"],
+            ["@yarnpkg/pnpify", "virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:2.4.0"],
+            ["builtin-modules", "npm:3.1.0"],
+            ["esbuild", "npm:0.8.17"],
+            ["example", "npm:0.0.0"],
+            ["lodash", "npm:4.17.20"],
+            ["react", "npm:17.0.1"],
+            ["react-dom", "virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:17.0.1"],
+            ["react-storage-hooks", "virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:4.0.1"],
+            ["resolve", "patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"],
+            ["sucrase", "npm:3.16.0"],
+            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=cc6730"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["pretty-bytes", [
         ["npm:5.4.1", {
           "packageLocation": "./.yarn/cache/pretty-bytes-npm-5.4.1-c867dc5fbd-da79e856b6.zip/node_modules/pretty-bytes/",
@@ -1449,10 +1486,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:17.0.1", {
-          "packageLocation": "./.yarn/$$virtual/react-dom-virtual-c28f01faa0/0/cache/react-dom-npm-17.0.1-588d0088ca-6a70028fbe.zip/node_modules/react-dom/",
+        ["virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:17.0.1", {
+          "packageLocation": "./.yarn/$$virtual/react-dom-virtual-2892175d09/0/cache/react-dom-npm-17.0.1-588d0088ca-6a70028fbe.zip/node_modules/react-dom/",
           "packageDependencies": [
-            ["react-dom", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:17.0.1"],
+            ["react-dom", "virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:17.0.1"],
             ["@types/react", null],
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"],
@@ -1474,10 +1511,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:4.0.1", {
-          "packageLocation": "./.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/",
+        ["virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:4.0.1", {
+          "packageLocation": "./.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/",
           "packageDependencies": [
-            ["react-storage-hooks", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:4.0.1"],
+            ["react-storage-hooks", "virtual:37ad7efad4a5c8c103f4da1edc98387059899e7334fc10211b77a52dd608cfbe819cedd664ce2a028d41e9ce62459d0b1687db44aa3ba42d18bac0d8287943eb#npm:4.0.1"],
             ["@types/react", null],
             ["react", "npm:17.0.1"]
           ],
@@ -1507,26 +1544,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["repeat-string", "npm:1.6.1"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["reproduction-esbuild-require-in-esm-with-externals", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["reproduction-esbuild-require-in-esm-with-externals", "workspace:."],
-            ["@types/resolve", "npm:1.17.1"],
-            ["@yarnpkg/pnpify", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:2.4.0"],
-            ["builtin-modules", "npm:3.1.0"],
-            ["esbuild", "npm:0.8.17"],
-            ["lodash", "npm:4.17.20"],
-            ["react", "npm:17.0.1"],
-            ["react-dom", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:17.0.1"],
-            ["react-storage-hooks", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:4.0.1"],
-            ["resolve", "patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"],
-            ["sucrase", "npm:3.16.0"],
-            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=cc6730"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["resolve", [
@@ -1566,6 +1583,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["reusify", "npm:1.0.4"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["root-workspace-0b6124", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["root-workspace-0b6124", "workspace:."]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["run-parallel", [

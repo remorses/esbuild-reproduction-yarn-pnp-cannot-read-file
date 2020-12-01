@@ -35,7 +35,7 @@
       "bytes": 542563,
       "imports": []
     },
-    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/src/utils.ts": {
+    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/pnp-plugin/src/utils.ts": {
       "bytes": 31,
       "imports": [
         {
@@ -43,7 +43,19 @@
         }
       ]
     },
-    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js": {
+    "builtins:https": {
+      "bytes": 19,
+      "imports": []
+    },
+    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/cache/example-npm-0.0.0-fbd1a5d224-88e1e28403.zip/node_modules/example/github.js": {
+      "bytes": 886,
+      "imports": [
+        {
+          "path": "builtins:https"
+        }
+      ]
+    },
+    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js": {
       "bytes": 2912,
       "imports": [
         {
@@ -51,50 +63,53 @@
         }
       ]
     },
-    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/state.js": {
+    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/state.js": {
       "bytes": 628,
       "imports": [
         {
           "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/cache/react-npm-17.0.1-98658812fc-a76d86ec97.zip/node_modules/react/index.js"
         },
         {
-          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js"
+          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js"
         }
       ]
     },
-    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/reducer.js": {
+    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/reducer.js": {
       "bytes": 1312,
       "imports": [
         {
           "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/cache/react-npm-17.0.1-98658812fc-a76d86ec97.zip/node_modules/react/index.js"
         },
         {
-          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js"
+          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js"
         }
       ]
     },
-    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/index.js": {
+    "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/index.js": {
       "bytes": 272,
       "imports": [
         {
-          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/state.js"
+          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/state.js"
         },
         {
-          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/reducer.js"
+          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/reducer.js"
         }
       ]
     },
     "../src/index.ts": {
-      "bytes": 164,
+      "bytes": 197,
       "imports": [
         {
           "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/cache/react-npm-17.0.1-98658812fc-a76d86ec97.zip/node_modules/react/index.js"
         },
         {
-          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/src/utils.ts"
+          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/pnp-plugin/src/utils.ts"
         },
         {
-          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/index.js"
+          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/cache/example-npm-0.0.0-fbd1a5d224-88e1e28403.zip/node_modules/example/github.js"
+        },
+        {
+          "path": "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/index.js"
         }
       ]
     }
@@ -119,26 +134,32 @@
         "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/cache/lodash-npm-4.17.20-c0db62021c-c62101d250.zip/node_modules/lodash/lodash.js": {
           "bytesInOutput": 210988
         },
-        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js": {
+        "builtins:https": {
+          "bytesInOutput": 81
+        },
+        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/cache/example-npm-0.0.0-fbd1a5d224-88e1e28403.zip/node_modules/example/github.js": {
+          "bytesInOutput": 1036
+        },
+        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/common.js": {
           "bytesInOutput": 2828
         },
-        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/state.js": {
+        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/state.js": {
           "bytesInOutput": 663
         },
-        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/reducer.js": {
+        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/reducer.js": {
           "bytesInOutput": 1332
         },
-        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-66e21e51a4/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/index.js": {
+        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/.yarn/$$virtual/react-storage-hooks-virtual-217ec22b19/0/cache/react-storage-hooks-npm-4.0.1-f17316c8fb-89afe645c1.zip/node_modules/react-storage-hooks/dist/index.js": {
           "bytesInOutput": 292
         },
         "../src/index.ts": {
-          "bytesInOutput": 191
+          "bytesInOutput": 248
         },
-        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/src/utils.ts": {
+        "pnp:/Users/morse/Documents/GitHub/esbuild-reproduction-yarn-pnp-cannot-read-file/pnp-plugin/src/utils.ts": {
           "bytesInOutput": 43
         }
       },
-      "bytes": 290790
+      "bytes": 292166
     }
   }
 }

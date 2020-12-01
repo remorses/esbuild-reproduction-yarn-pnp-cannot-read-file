@@ -589,6 +589,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"example@npm:*":
+  version: 0.0.0
+  resolution: "example@npm:0.0.0"
+  checksum: 88e1e284033ec15b2730eddd4bee5e0f86d8e138410848e1365a772bfe6586c546524e57283bce6c53cbd3fd3f4721c0b2aeb016a4a3c0b3f9dbe89ed7272c7c
+  languageName: node
+  linkType: hard
+
+"example@workspace:example":
+  version: 0.0.0-use.local
+  resolution: "example@workspace:example"
+  dependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.2":
   version: 3.2.4
   resolution: "fast-glob@npm:3.2.4"
@@ -1147,6 +1162,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pnp-plugin@workspace:pnp-plugin":
+  version: 0.0.0-use.local
+  resolution: "pnp-plugin@workspace:pnp-plugin"
+  dependencies:
+    "@types/resolve": ^1.17.1
+    "@yarnpkg/pnpify": ^2.4.0
+    builtin-modules: ^3.1.0
+    esbuild: ^0.8.17
+    example: "*"
+    lodash: ^4.17.20
+    react: ^17.0.1
+    react-dom: ^17.0.1
+    react-storage-hooks: ^4.0.1
+    resolve: ^1.19.0
+    sucrase: ^3.16.0
+    typescript: ^4.1.2
+  languageName: unknown
+  linkType: soft
+
 "pretty-bytes@npm:^5.1.0":
   version: 5.4.1
   resolution: "pretty-bytes@npm:5.4.1"
@@ -1221,7 +1255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.1":
+"react@npm:*, react@npm:^17.0.1":
   version: 17.0.1
   resolution: "react@npm:17.0.1"
   dependencies:
@@ -1248,24 +1282,6 @@ __metadata:
   checksum: 99c431ba7bef7a5d39819d562ebca89206368b45f73213677a3b562e25b5dd272d9e6a2ca8105001df14b6fc8cc71f0b10258c86e16cf8a256318fac1ddc8a77
   languageName: node
   linkType: hard
-
-"reproduction-esbuild-require-in-esm-with-externals@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "reproduction-esbuild-require-in-esm-with-externals@workspace:."
-  dependencies:
-    "@types/resolve": ^1.17.1
-    "@yarnpkg/pnpify": ^2.4.0
-    builtin-modules: ^3.1.0
-    esbuild: ^0.8.17
-    lodash: ^4.17.20
-    react: ^17.0.1
-    react-dom: ^17.0.1
-    react-storage-hooks: ^4.0.1
-    resolve: ^1.19.0
-    sucrase: ^3.16.0
-    typescript: ^4.1.2
-  languageName: unknown
-  linkType: soft
 
 "resolve-alpn@npm:^1.0.0":
   version: 1.0.0
@@ -1309,6 +1325,12 @@ resolve@^1.19.0:
   checksum: 08ef02ed0514f020a51131ba2e6c27c66ccebe25d49cfc83467a0d4054db4634a2853480d0895c710b645ab66af1a6fb3e183888306ae559413bd96c69f39ccd
   languageName: node
   linkType: hard
+
+"root-workspace-0b6124@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "root-workspace-0b6124@workspace:."
+  languageName: unknown
+  linkType: soft
 
 "run-parallel@npm:^1.1.9":
   version: 1.1.10
