@@ -9,7 +9,9 @@
         "build": "node -r sucrase/register build.ts"
     },
     "dependencies": {
+        "builtin-modules": "^3.1.0",
         "esbuild": "^0.8.17",
+        "lodash": "^4.17.20",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-storage-hooks": "^4.0.1",

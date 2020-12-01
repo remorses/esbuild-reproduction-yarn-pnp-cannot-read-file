@@ -39,7 +39,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/resolve", "npm:1.17.1"],
             ["@yarnpkg/pnpify", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:2.4.0"],
+            ["builtin-modules", "npm:3.1.0"],
             ["esbuild", "npm:0.8.17"],
+            ["lodash", "npm:4.17.20"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:17.0.1"],
             ["react-storage-hooks", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:4.0.1"],
@@ -466,6 +468,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["buffer", "npm:5.7.1"],
             ["base64-js", "npm:1.5.1"],
             ["ieee754", "npm:1.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["builtin-modules", [
+        ["npm:3.1.0", {
+          "packageLocation": "./.yarn/cache/builtin-modules-npm-3.1.0-fb00ef3f7a-54f062393c.zip/node_modules/builtin-modules/",
+          "packageDependencies": [
+            ["builtin-modules", "npm:3.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -1505,7 +1516,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["reproduction-esbuild-require-in-esm-with-externals", "workspace:."],
             ["@types/resolve", "npm:1.17.1"],
             ["@yarnpkg/pnpify", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:2.4.0"],
+            ["builtin-modules", "npm:3.1.0"],
             ["esbuild", "npm:0.8.17"],
+            ["lodash", "npm:4.17.20"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:17.0.1"],
             ["react-storage-hooks", "virtual:bc6375ea22aef1eb11062a2bb2e463da9a447bcc31c933a9c8ac928b46944d0b3b774c2228d6f3bb1191c63cf4b0a39f6e364cc86743af58f31f98a4899a1af5#npm:4.0.1"],
