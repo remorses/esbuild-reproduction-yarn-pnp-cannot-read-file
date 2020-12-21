@@ -1,5 +1,6 @@
 import { build } from 'esbuild'
 import { PnpResolver } from './plugin'
+import { NodeResolvePlugin } from '@esbuild-plugins/all'
 
 build({
     bundle: true,
@@ -7,7 +8,24 @@ build({
     format: 'esm',
     splitting: true,
     metafile: 'meta.json',
-    target: 'es2017',
+    target: 'es2020',
     entryPoints: ['./src/index.ts'],
-    plugins: [PnpResolver()],
+    loader: { '.png': 'file' },
+    plugins: [
+        NodeResolvePlugin({
+            onResolved: (x) => {
+                console.log({ x })
+            },
+            extensions: ['.png', '.ts', '.js'],
+        }),
+        {
+            name: 'test',
+            setup({ onLoad }) {
+                onLoad({ filter: /\.png/ }, (args) => {
+                    console.log({ args })
+                    return null
+                })
+            },
+        },
+    ],
 })
